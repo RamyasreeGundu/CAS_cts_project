@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CAS_NewsAroundCognizant">
+	<parameter name="BaseURL" value="https://be.cognizant.com" />
+	<parameter name="Browser" value="Chrome"></parameter>
+	<test name="UserInformation">
+		<classes>
+			<class name="com.cas.news.test.UserInformationTest" />
+		</classes>
+	</test>
+	<test name="MainPage">
+		<classes>
+			<class name="com.cas.news.test.MainPageTests" />
+		</classes>
+	</test>
+	<test name="AllNewsPage">
+		<classes>
+			<class name="com.cas.news.test.AllNewsPageTests" />
+		</classes>
+	</test>
+</suite>

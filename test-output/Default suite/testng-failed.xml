@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.cas.news.test.UserInformationTest">
+        <methods>
+          <include name="getResult"/>
+          <include name="PrintUserDetails"/>
+          <include name="initiateDriver"/>
+          <include name="tearDown"/>
+          <include name="initiatePageFactory"/>
+        </methods>
+      </class> <!-- com.cas.news.test.UserInformationTest -->
+      <class name="com.cas.news.test.AllNewsPageTests">
+        <methods>
+          <include name="getResult"/>
+          <include name="GetNewsDetails"/>
+          <include name="ValidateSeeAllToolTips"/>
+          <include name="initiateDriver"/>
+          <include name="tearDown"/>
+          <include name="initiatePageClass"/>
+        </methods>
+      </class> <!-- com.cas.news.test.AllNewsPageTests -->
+      <class name="com.cas.news.test.MainPageTests">
+        <methods>
+          <include name="getResult"/>
+          <include name="initiatePageClass"/>
+          <include name="initiateDriver"/>
+          <include name="tearDown"/>
+          <include name="ValidateHeader"/>
+          <include name="ValidateMainPageToolTips"/>
+          <include name="SellAll"/>
+        </methods>
+      </class> <!-- com.cas.news.test.MainPageTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
